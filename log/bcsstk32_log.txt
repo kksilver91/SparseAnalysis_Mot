@@ -1,0 +1,259 @@
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+txt file name : benchmark/bcsstk32.txt 
+bcsstk32Merged_rank0.txt
+bcsstk32Merged_rank1.txt
+bcsstk32MergedTwoCache_rank0.txt
+bcsstk32MergedTwoCache_rank1.txt
+bcsstk32Rowptr_rank0.txt
+bcsstk32Rowptr_rank1.txt
+bcsstk32Sequential_rank0.txt
+bcsstk32Sequential_rank1.txt
+bcsstk32Nomerged_rank0.txt
+bcsstk32Nomerged_rank1.txt
+bcsstk32NomergedTwoCache_rank0.txt
+bcsstk32NomergedTwoCache_rank1.txt
+matrix row_ptr_size is 44610, # of nonzero is 2014701 
+
+********** 한 row 당 element 개수 분석 ***********
+한 row에 8개 이하인 것의 개수: 
+NumRowElements[0]:0
+NumRowElements[1]:0
+NumRowElements[2]:2
+NumRowElements[3]:0
+NumRowElements[4]:0
+NumRowElements[5]:0
+NumRowElements[6]:6
+NumRowElements[7]:0
+NumRowElements[8]:44602
+
+한 row에 개수가 8개 이하인 것에 포함된 element 개수와 그외의 개수 비교
+NumNonzero_BelowEight: 40
+else:2014661
+
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 251837
+한 block에 개수가 2개인 block 개수: 1
+한 block에 개수가 3개인 block 개수: 0
+한 block에 개수가 4개인 block 개수: 0
+한 block에 개수가 5개인 block 개수: 0
+한 block에 개수가 6개인 block 개수: 0
+한 block에 개수가 7개인 block 개수: 0
+한 block에 개수가 8개인 block 개수: 0
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 251838
+NumSequential 합 for debugging : 251838
+한 block에 여러 row를 가진 block 비율: 3.97082e-06
+
+
+******* CSR group 단위로 나눈 것 디버깅 *********
+rowptr size: 44610
+col_idx_size: 2014701
+
+RowptrSize_group0: 10873
+RowptrSize_group0: 11601
+RowptrSize_group0: 10836
+RowptrSize_group0: 11300
+ColSize_group0: 503637
+ColSize_group0: 503681
+ColSize_group0: 503696
+ColSize_group0: 503687
+CORRECT: Row 단위로 나눴을 떄 colsize 일치 
+
+
+
+********* CSR Row 단위로 나눈 것 디버깅 ***********
+rowptr[n-1]: 1007318
+rowptr[n-1]_2: 1007383
+rowptr size: 44610
+col_idx_size: 2014701
+
+RowptrSize_rank0: 22474
+RowptrSize_rank1: 22137
+
+ColSize_rank0: 1007318
+ColSize_rank1: 1007383
+CORRECT: Row 단위로 나눴을 떄 colsize 일치 
+
+정직하게 자를 때 rank0에 해당하는
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 125915
+한 block에 개수가 2개인 block 개수: 0
+한 block에 개수가 3개인 block 개수: 0
+한 block에 개수가 4개인 block 개수: 0
+한 block에 개수가 5개인 block 개수: 0
+한 block에 개수가 6개인 block 개수: 0
+한 block에 개수가 7개인 block 개수: 0
+한 block에 개수가 8개인 block 개수: 0
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 125915
+NumSequential 합 for debugging : 125915
+한 block에 여러 row를 가진 block 비율: 0
+
+정직하게 자를 때 rank1에 해당하는
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 125921
+한 block에 개수가 2개인 block 개수: 2
+한 block에 개수가 3개인 block 개수: 0
+한 block에 개수가 4개인 block 개수: 0
+한 block에 개수가 5개인 block 개수: 0
+한 block에 개수가 6개인 block 개수: 0
+한 block에 개수가 7개인 block 개수: 0
+한 block에 개수가 8개인 block 개수: 0
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 125923
+NumSequential 합 for debugging : 125923
+한 block에 여러 row를 가진 block 비율: 1.58828e-05
+
+
+
+********* 연속으로 Row가 몇번 같은 Block에 있는 지 분석 (전체)  ***********
+연속 Block 개수가 0 인 경우: 44608
+연속 Block 개수가 1 인 경우: 1
+연속 ZeroBlock 개수|0|44610
+
+
+********* 각 그룹 조합당 최대값 비교  ***********
+
+ColIdxAnalysis_Merged[0] section 0: 495593
+ColIdxAnalysis_Merged[0] section 1: 484220
+
+ColIdxAnalysis_Merged[1] section 0: 491621
+ColIdxAnalysis_Merged[1] section 1: 469557
+
+ColIdxAnalysis_Merged[2] section 0: 487595
+ColIdxAnalysis_Merged[2] section 1: 477986
+
+Min_Merged[0]: 484220
+Min_Merged[1]: 469557
+Min_Merged[2]: 477986
+Max_Merged:484220
+Max_Group:0
+
+
+********* group 단위 col 개수 분석 ***********
+
+ColIdxAnalysis[0]: 478707  3128  12914  8888  
+ColIdxAnalysis[1]: 16886  460528  18568  7699  
+ColIdxAnalysis[2]: 12914  11908  459418  19456  
+ColIdxAnalysis[3]: 8888  8139  24802  461858  
+
+
+********* MergedGroup 단위 col 개수 분석 ***********
+
+ColIdxAnalysisMerged[0]: 495593  463656  31482  16587  
+ColIdxAnalysisMerged[1]: 21802  20047  484220  481314  
+
+
+********* NoMergedGroup 단위 col 개수 분석 ***********
+
+ColIdxAnalysis_Nomerged[0]: 495593  463656  31482  16587  
+ColIdxAnalysis_Nomerged[1]: 21803  20047  484219  481314  
+
+
+
+
+*******  cache group 결정 (for merged)***********
+
+cache_group_rank0: 0
+cache_group_2_rank0: 1
+cache_group_rank1: 2
+cache_group_2_rank1: 3
+
+
+
+*******  cache group 결정 (for Nomerged)***********
+
+cache_group_rank0: 0
+cache_group_2_rank0: 1
+cache_group_rank1: 2
+cache_group_2_rank1: 3
+
+******* 각 col group 분석 결과 출력 (total, rank0, rank1) ***********
+print rank0 col idx analysis
+group[0]495593
+group[1]463656
+group[2]31482
+group[3]16587
+sum_rank0: 1007318
+
+print rank1 col idx analysis
+group[0]21802
+group[1]20047
+group[2]484220
+group[3]481314
+sum_rank1: 1007383
+
+
+
+******* Mapping 후 parallel 성립하는 block 개수 분석 ***********
+Total Rowsize: 44610
+total nonzero#: 2014701
+Total Numblock: 251838
+
+rank0 nonzero#: 1007318
+rank1 nonzero#: 1007383
+range_rank0: 0 ~ 11153
+second range_rank0: 11153 ~ 22306
+
+range_rank1: 22306 ~ 33459
+second range_rank1: 33459 ~ 44612
+
+debugging Write rowptr
+22474
+125914
+writeNUM: 125915
+debugging Write rowptr
+22137
+125922
+writeNUM: 125923
+debugging Write Sequential
+22474
+125914
+writeNUM: 125915
+debugging Write Sequential
+22137
+125922
+writeNUM: 125923
+
+
+******Merged parallel 분석 결과*******
+RowptrMerged_rank0: 125915
+RowptrMerged_rank1: 125923
+num_parallel_rank0: 58000
+num_parallel_rank1: 53105
+num_parallel_twocache_rank0: 115069
+num_parallel_twocache_rank1: 115584
+
+num_nonparallel_rank0: 67915
+num_nonparallel_rank1: 72818
+num_nonparallel_twocache_rank0: 10846
+num_nonparallel_twocache_rank1: 10339
+
+parallel ratio: 0.421726
+parallel ratio_twocache: 0.913863
+
+
+
+******NoMerged parallel 분석 결과*******
+RowptrMerged_rank0: 125915
+RowptrMerged_rank1: 125923
+num_parallel_rank0: 58000
+num_parallel_rank1: 53110
+num_parallel_twocache_rank0: 115069
+num_parallel_twocache_rank1: 115589
+
+num_nonparallel_rank0: 67915
+num_nonparallel_rank1: 72813
+num_nonparallel_twocache_rank0: 10846
+num_nonparallel_twocache_rank1: 10334
+
+parallel ratio: 0.421766
+parallel ratio_twocache: 0.913863
+
+
+
+******* Rank0 mapping 전, mapping 후 col 배치 분석 ***********
+

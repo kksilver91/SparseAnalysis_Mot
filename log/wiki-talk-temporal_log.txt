@@ -1,0 +1,366 @@
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+txt file name : benchmark/wiki-talk-temporal.txt 
+wiki-talk-temporalMerged_rank0.txt
+wiki-talk-temporalMerged_rank1.txt
+wiki-talk-temporalMergedTwoCache_rank0.txt
+wiki-talk-temporalMergedTwoCache_rank1.txt
+wiki-talk-temporalRowptr_rank0.txt
+wiki-talk-temporalRowptr_rank1.txt
+wiki-talk-temporalSequential_rank0.txt
+wiki-talk-temporalSequential_rank1.txt
+wiki-talk-temporalNomerged_rank0.txt
+wiki-talk-temporalNomerged_rank1.txt
+wiki-talk-temporalNomergedTwoCache_rank0.txt
+wiki-talk-temporalNomergedTwoCache_rank1.txt
+matrix row_ptr_size is 1140150, # of nonzero is 3309592 
+
+********** 한 row 당 element 개수 분석 ***********
+한 row에 8개 이하인 것의 개수: 
+NumRowElements[0]:888995
+NumRowElements[1]:166291
+NumRowElements[2]:31807
+NumRowElements[3]:13120
+NumRowElements[4]:7050
+NumRowElements[5]:4455
+NumRowElements[6]:3101
+NumRowElements[7]:2310
+NumRowElements[8]:23021
+
+한 row에 개수가 8개 이하인 것에 포함된 element 개수와 그외의 개수 비교
+NumNonzero_BelowEight: 354516
+else:2955076
+
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 366040
+한 block에 개수가 2개인 block 개수: 10016
+한 block에 개수가 3개인 block 개수: 6950
+한 block에 개수가 4개인 block 개수: 5794
+한 block에 개수가 5개인 block 개수: 5202
+한 block에 개수가 6개인 block 개수: 5114
+한 block에 개수가 7개인 block 개수: 5978
+한 block에 개수가 8개인 block 개수: 8606
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 413699
+NumSequential 합 for debugging : 413700
+한 block에 여러 row를 가진 block 비율: 0.115205
+
+
+******* CSR group 단위로 나눈 것 디버깅 *********
+rowptr size: 1140150
+col_idx_size: 3309592
+
+RowptrSize_group0: 1637
+RowptrSize_group0: 3870
+RowptrSize_group0: 13810
+RowptrSize_group0: 1120833
+ColSize_group0: 826432
+ColSize_group0: 828254
+ColSize_group0: 827482
+ColSize_group0: 827424
+CORRECT: Row 단위로 나눴을 떄 colsize 일치 
+
+
+
+********* CSR Row 단위로 나눈 것 디버깅 ***********
+rowptr[n-1]: 1654686
+rowptr[n-1]_2: 1654906
+rowptr size: 1140150
+col_idx_size: 3309592
+
+RowptrSize_rank0: 5507
+RowptrSize_rank1: 1134644
+
+ColSize_rank0: 1654686
+ColSize_rank1: 1654906
+CORRECT: Row 단위로 나눴을 떄 colsize 일치 
+
+정직하게 자를 때 rank0에 해당하는
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 206100
+한 block에 개수가 2개인 block 개수: 582
+한 block에 개수가 3개인 block 개수: 120
+한 block에 개수가 4개인 block 개수: 23
+한 block에 개수가 5개인 block 개수: 9
+한 block에 개수가 6개인 block 개수: 1
+한 block에 개수가 7개인 block 개수: 0
+한 block에 개수가 8개인 block 개수: 1
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 206836
+NumSequential 합 for debugging : 206836
+한 block에 여러 row를 가진 block 비율: 0.00355839
+
+정직하게 자를 때 rank1에 해당하는
+ ******** 한 block당 서로 다른 row 분석 ******** 
+한 block에 개수가 1개인 block 개수: 159931
+한 block에 개수가 2개인 block 개수: 9463
+한 block에 개수가 3개인 block 개수: 6833
+한 block에 개수가 4개인 block 개수: 5636
+한 block에 개수가 5개인 block 개수: 5255
+한 block에 개수가 6개인 block 개수: 5223
+한 block에 개수가 7개인 block 개수: 5916
+한 block에 개수가 8개인 block 개수: 8607
+한 block에 개수가 9개인 block 개수: 0
+전체 block 개수 for debugging : 206864
+NumSequential 합 for debugging : 206864
+한 block에 여러 row를 가진 block 비율: 0.22688
+
+
+
+********* 연속으로 Row가 몇번 같은 Block에 있는 지 분석 (전체)  ***********
+연속 Block 개수가 0 인 경우: 19709
+연속 Block 개수가 1 인 경우: 10016
+연속 Block 개수가 2 인 경우: 6950
+연속 Block 개수가 3 인 경우: 5794
+연속 Block 개수가 4 인 경우: 5202
+연속 Block 개수가 5 인 경우: 5114
+연속 Block 개수가 6 인 경우: 5978
+연속 Block 개수가 7 인 경우: 8606
+연속 ZeroBlock 개수|0|130799
+연속 ZeroBlock 개수|1|22185
+연속 ZeroBlock 개수|2|16621
+연속 ZeroBlock 개수|3|12962
+연속 ZeroBlock 개수|4|10090
+연속 ZeroBlock 개수|5|8195
+연속 ZeroBlock 개수|6|6762
+연속 ZeroBlock 개수|7|5602
+연속 ZeroBlock 개수|8|4781
+연속 ZeroBlock 개수|9|4040
+연속 ZeroBlock 개수|10|3457
+연속 ZeroBlock 개수|11|2958
+연속 ZeroBlock 개수|12|2501
+연속 ZeroBlock 개수|13|2159
+연속 ZeroBlock 개수|14|1982
+연속 ZeroBlock 개수|15|1655
+연속 ZeroBlock 개수|16|1513
+연속 ZeroBlock 개수|17|1367
+연속 ZeroBlock 개수|18|1139
+연속 ZeroBlock 개수|19|1071
+연속 ZeroBlock 개수|20|905
+연속 ZeroBlock 개수|21|811
+연속 ZeroBlock 개수|22|696
+연속 ZeroBlock 개수|23|674
+연속 ZeroBlock 개수|24|597
+연속 ZeroBlock 개수|25|503
+연속 ZeroBlock 개수|26|442
+연속 ZeroBlock 개수|27|455
+연속 ZeroBlock 개수|28|340
+연속 ZeroBlock 개수|29|335
+연속 ZeroBlock 개수|30|270
+연속 ZeroBlock 개수|31|285
+연속 ZeroBlock 개수|32|236
+연속 ZeroBlock 개수|33|214
+연속 ZeroBlock 개수|34|172
+연속 ZeroBlock 개수|35|183
+연속 ZeroBlock 개수|36|162
+연속 ZeroBlock 개수|37|160
+연속 ZeroBlock 개수|38|144
+연속 ZeroBlock 개수|39|124
+연속 ZeroBlock 개수|40|87
+연속 ZeroBlock 개수|41|108
+연속 ZeroBlock 개수|42|113
+연속 ZeroBlock 개수|43|73
+연속 ZeroBlock 개수|44|105
+연속 ZeroBlock 개수|45|65
+연속 ZeroBlock 개수|46|54
+연속 ZeroBlock 개수|47|65
+연속 ZeroBlock 개수|48|66
+연속 ZeroBlock 개수|49|52
+연속 ZeroBlock 개수|50|60
+연속 ZeroBlock 개수|51|42
+연속 ZeroBlock 개수|52|40
+연속 ZeroBlock 개수|53|40
+연속 ZeroBlock 개수|54|47
+연속 ZeroBlock 개수|55|31
+연속 ZeroBlock 개수|56|38
+연속 ZeroBlock 개수|57|20
+연속 ZeroBlock 개수|58|21
+연속 ZeroBlock 개수|59|25
+연속 ZeroBlock 개수|60|24
+연속 ZeroBlock 개수|61|26
+연속 ZeroBlock 개수|62|23
+연속 ZeroBlock 개수|63|21
+연속 ZeroBlock 개수|64|23
+연속 ZeroBlock 개수|65|13
+연속 ZeroBlock 개수|66|11
+연속 ZeroBlock 개수|67|17
+연속 ZeroBlock 개수|68|15
+연속 ZeroBlock 개수|69|11
+연속 ZeroBlock 개수|70|15
+연속 ZeroBlock 개수|71|13
+연속 ZeroBlock 개수|72|16
+연속 ZeroBlock 개수|73|10
+연속 ZeroBlock 개수|74|3
+연속 ZeroBlock 개수|75|14
+연속 ZeroBlock 개수|76|11
+연속 ZeroBlock 개수|77|8
+연속 ZeroBlock 개수|78|5
+연속 ZeroBlock 개수|79|5
+연속 ZeroBlock 개수|80|6
+연속 ZeroBlock 개수|81|8
+연속 ZeroBlock 개수|82|6
+연속 ZeroBlock 개수|83|6
+연속 ZeroBlock 개수|84|8
+연속 ZeroBlock 개수|85|6
+연속 ZeroBlock 개수|86|5
+연속 ZeroBlock 개수|87|5
+연속 ZeroBlock 개수|88|6
+연속 ZeroBlock 개수|89|2
+연속 ZeroBlock 개수|90|4
+연속 ZeroBlock 개수|91|5
+연속 ZeroBlock 개수|92|7
+연속 ZeroBlock 개수|93|7
+연속 ZeroBlock 개수|94|3
+연속 ZeroBlock 개수|95|5
+연속 ZeroBlock 개수|96|1
+연속 ZeroBlock 개수|97|6
+연속 ZeroBlock 개수|98|4
+연속 ZeroBlock 개수|99|2
+연속 ZeroBlock 개수|100|3
+연속 ZeroBlock 개수|101|1
+연속 ZeroBlock 개수|102|4
+연속 ZeroBlock 개수|103|2
+연속 ZeroBlock 개수|104|4
+연속 ZeroBlock 개수|105|1
+연속 ZeroBlock 개수|106|3
+연속 ZeroBlock 개수|107|2
+연속 ZeroBlock 개수|108|2
+연속 ZeroBlock 개수|109|2
+연속 ZeroBlock 개수|111|2
+연속 ZeroBlock 개수|112|2
+연속 ZeroBlock 개수|115|1
+연속 ZeroBlock 개수|116|5
+연속 ZeroBlock 개수|117|4
+연속 ZeroBlock 개수|119|1
+연속 ZeroBlock 개수|120|1
+연속 ZeroBlock 개수|125|1
+연속 ZeroBlock 개수|126|2
+연속 ZeroBlock 개수|127|1
+연속 ZeroBlock 개수|128|2
+연속 ZeroBlock 개수|129|1
+연속 ZeroBlock 개수|130|3
+연속 ZeroBlock 개수|134|2
+연속 ZeroBlock 개수|135|1
+연속 ZeroBlock 개수|136|1
+연속 ZeroBlock 개수|138|1
+연속 ZeroBlock 개수|143|1
+연속 ZeroBlock 개수|144|1
+연속 ZeroBlock 개수|145|1
+연속 ZeroBlock 개수|147|1
+연속 ZeroBlock 개수|149|1
+연속 ZeroBlock 개수|153|1
+연속 ZeroBlock 개수|154|1
+연속 ZeroBlock 개수|157|1
+연속 ZeroBlock 개수|162|1
+연속 ZeroBlock 개수|177|1
+연속 ZeroBlock 개수|180|1
+연속 ZeroBlock 개수|200|1
+연속 ZeroBlock 개수|209|1
+연속 ZeroBlock 개수|251|2
+
+
+********* 각 그룹 조합당 최대값 비교  ***********
+
+ColIdxAnalysis_Merged[0] section 0: 954542
+ColIdxAnalysis_Merged[0] section 1: 947625
+
+ColIdxAnalysis_Merged[1] section 0: 982004
+ColIdxAnalysis_Merged[1] section 1: 920163
+
+ColIdxAnalysis_Merged[2] section 0: 961443
+ColIdxAnalysis_Merged[2] section 1: 940724
+
+Min_Merged[0]: 947625
+Min_Merged[1]: 920163
+Min_Merged[2]: 940724
+Max_Merged:947625
+Max_Group:0
+
+
+********* group 단위 col 개수 분석 ***********
+
+ColIdxAnalysis[0]: 497911  126817  112163  89541  
+ColIdxAnalysis[1]: 456631  136326  118238  117059  
+ColIdxAnalysis[2]: 484093  135059  102167  106163  
+ColIdxAnalysis[3]: 463532  112015  128478  123399  
+
+
+********* MergedGroup 단위 col 개수 분석 ***********
+
+ColIdxAnalysisMerged[0]: 954542  263143  230401  206600  
+ColIdxAnalysisMerged[1]: 947625  247074  230645  229562  
+
+
+********* NoMergedGroup 단위 col 개수 분석 ***********
+
+ColIdxAnalysis_Nomerged[0]: 954542  263143  230401  206600  
+ColIdxAnalysis_Nomerged[1]: 947625  247074  230645  229562  
+
+
+
+
+*******  cache group 결정 (for merged)***********
+
+cache_group_rank0: 0
+cache_group_2_rank0: 1
+cache_group_rank1: 0
+cache_group_2_rank1: 1
+
+
+
+*******  cache group 결정 (for Nomerged)***********
+
+cache_group_rank0: 0
+cache_group_2_rank0: 1
+cache_group_rank1: 0
+cache_group_2_rank1: 1
+
+******* 각 col group 분석 결과 출력 (total, rank0, rank1) ***********
+print rank0 col idx analysis
+group[0]954542
+group[1]263143
+group[2]230401
+group[3]206600
+sum_rank0: 1654686
+
+print rank1 col idx analysis
+group[0]947625
+group[1]247074
+group[2]230645
+group[3]229562
+sum_rank1: 1654906
+
+
+
+******* Mapping 후 parallel 성립하는 block 개수 분석 ***********
+Total Rowsize: 1140150
+total nonzero#: 3309592
+Total Numblock: 413699
+
+rank0 nonzero#: 1654686
+rank1 nonzero#: 1654906
+range_rank0: 0 ~ 285038
+second range_rank0: 285038 ~ 570076
+
+range_rank1: 0 ~ 285038
+second range_rank1: 285038 ~ 570076
+
+debugging Write rowptr
+5507
+206835
+writeNUM: 206836
+debugging Write rowptr
+1134644
+206863
+writeNUM: 206864
+debugging Write Sequential
+5507
+206835
+writeNUM: 206836
+debugging Write Sequential
+1134644
+206863
+writeNUM: 206864

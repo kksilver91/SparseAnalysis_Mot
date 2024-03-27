@@ -1,0 +1,101 @@
+8 [140318567310080] INFO perfrun.launcher <> - Launcher main begin
+9 [140318567310080] INFO perfrun.launcher <> - MessageCatalogInit finished
+9 [140318567310080] INFO perfrun.launcher <> - Launcher instance created
+9 [140318567310080] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/oneapi/advisor/2024.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 6 --option-file /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/config/runss.options 
+43 [140318567310080] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+43 [140318567310080] INFO perfrun.launcher <> - create file finder object
+43 [140318567310080] INFO perfrun.launcher <> - create a result directory: pattern = /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001 pid = 4294967295
+45 [140318567310080] INFO perfrun.sdk <> - checked that the directory /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001 is a local directory
+45 [140318567310080] INFO perfrun.sdk <> - the directory /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001 is a local directory with FS type ID 61267
+45 [140318567310080] INFO perfrun.launcher <> - create data directory = /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0
+45 [140318567310080] INFO perfrun.launcher <> - Creating the master collection flag
+48 [140318567310080] INFO perfrun.launcher <> - Done creating the master collection flag
+55 [140318441174784] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+55 [140318441174784] INFO perfrun.sdk <> - Allocating TMU :/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0/systemcollector-26718-esoc-System-Product-Name.sc
+56 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+56 [140318441174784] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+56 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+56 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+56 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+56 [140318441174784] INFO perfrun.mrte <> - system-wide mode is 0
+56 [140318441174784] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+65 [140318441174784] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0
+65 [140318441174784] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=esoc-System-Product-Name
+65 [140318441174784] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2024.0/lib32/runtime:/opt/intel/oneapi/advisor/2024.0/lib64/runtime
+65 [140318441174784] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/opt/intel/oneapi/advisor/2024.0/lib32/runtime:/opt/intel/oneapi/advisor/2024.0/lib64/runtime:/opt/intel/oneapi/tbb/2021.11/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.11/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.11/lib:/opt/intel/oneapi/mkl/2024.0/lib:/opt/intel/oneapi/ippcp/2021.9/lib/:/opt/intel/oneapi/ipp/2021.10/lib:/opt/intel/oneapi/dpl/2022.3/lib:/opt/intel/oneapi/dnnl/2024.0/lib:/opt/intel/oneapi/debugger/2024.0/opt/debugger/lib:/opt/intel/oneapi/dal/2024.0/lib:/opt/intel/oneapi/compiler/2024.0/opt/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2024.0/opt/compiler/lib:/opt/intel/oneapi/compiler/2024.0/lib:/opt/intel/oneapi/ccl/2021.11/lib/
+65 [140318441174784] INFO perfrun.mrte <> - Data directory: /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0
+65 [140318441174784] INFO perfrun.mrte <> - Mrte plugin is initialized
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+65 [140318441174784] INFO perfrun.tpss <> - initialize tpss controller
+65 [140318441174784] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+66 [140318441174784] INFO perfrun.tpss <> - default obj-size-min=1024
+66 [140318441174784] INFO perfrun.tpss <> - default hash-table-size=0
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318441174784] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2024.0/lib32/runtime:/opt/intel/oneapi/advisor/2024.0/lib64/runtime:/opt/intel/oneapi/tbb/2021.11/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.11/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.11/lib:/opt/intel/oneapi/mkl/2024.0/lib:/opt/intel/oneapi/ippcp/2021.9/lib/:/opt/intel/oneapi/ipp/2021.10/lib:/opt/intel/oneapi/dpl/2022.3/lib:/opt/intel/oneapi/dnnl/2024.0/lib:/opt/intel/oneapi/debugger/2024.0/opt/debugger/lib:/opt/intel/oneapi/dal/2024.0/lib:/opt/intel/oneapi/compiler/2024.0/opt/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2024.0/opt/compiler/lib:/opt/intel/oneapi/compiler/2024.0/lib:/opt/intel/oneapi/ccl/2021.11/lib/
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/oneapi/advisor/2024.0/lib32/runtime/libittnotify_collector.so
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/oneapi/advisor/2024.0/lib64/runtime/libittnotify_collector.so
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/oneapi/advisor/2024.0/lib32/runtime/libittnotify_collector.so
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/oneapi/advisor/2024.0/lib64/runtime/libittnotify_collector.so
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = esoc-System-Product-Name
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2024.0/lib32/runtime:/opt/intel/oneapi/advisor/2024.0/lib64/runtime
+66 [140318567310080] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2024.0/lib32/runtime:/opt/intel/oneapi/advisor/2024.0/lib64/runtime:/opt/intel/oneapi/tbb/2021.11/env/../lib/intel64/gcc4.8:/opt/intel/oneapi/mpi/2021.11/opt/mpi/libfabric/lib:/opt/intel/oneapi/mpi/2021.11/lib:/opt/intel/oneapi/mkl/2024.0/lib:/opt/intel/oneapi/ippcp/2021.9/lib/:/opt/intel/oneapi/ipp/2021.10/lib:/opt/intel/oneapi/dpl/2022.3/lib:/opt/intel/oneapi/dnnl/2024.0/lib:/opt/intel/oneapi/debugger/2024.0/opt/debugger/lib:/opt/intel/oneapi/dal/2024.0/lib:/opt/intel/oneapi/compiler/2024.0/opt/oclfpga/host/linux64/lib:/opt/intel/oneapi/compiler/2024.0/opt/compiler/lib:/opt/intel/oneapi/compiler/2024.0/lib:/opt/intel/oneapi/ccl/2021.11/lib/
+66 [140318567310080] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+67 [140318567310080] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./SPARSE_ANALYSIS benchmark/bcsstk32.txt 2 4 0
+67 [140318567310080] INFO perfrun.launcher <> - Launcher: command line to start after modification = /opt/intel/oneapi/advisor/2024.0/bin64/pin -error_file /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /opt/intel/oneapi/advisor/2024.0/lib64/libtpsstool.so -t /opt/intel/oneapi/advisor/2024.0/lib32/libtpsstool.so -server_name tpss_ipc.26718 -prd_dir /opt/intel/oneapi/advisor/2024.0 -- ./SPARSE_ANALYSIS benchmark/bcsstk32.txt 2 4 0
+67 [140318567310080] INFO perfrun.launcher <> - ProcessCreator object was created
+67 [140318567310080] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+72 [140318441174784] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+72 [140318441174784] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+76 [140318441174784] WARN perfrun.sdk <> - SEP tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:685
+76 [140318441174784] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:840
+76 [140318441174784] WARN perfrun.sdk <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:701
+76 [140318441174784] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1041
+80 [140318441174784] WARN perfrun.sdk <> - SEP tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:685
+80 [140318441174784] WARN perfrun.sdk <> - SEP driver is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:840
+80 [140318441174784] WARN perfrun.sdk <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:701
+80 [140318441174784] WARN perfrun.sdk <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/pluginsdk/src/device_mapper.cpp:1041
+80 [140318441174784] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+86 [140318441174784] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2024.0/bin32/advixe-runss -dump-vdso -r /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001 --tmp-dir /tmp/advixe-tmp-esoc' returned 1
+163 [140318441174784] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2024.0/bin64/advixe-runss -dump-vdso -r /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001 --tmp-dir /tmp/advixe-tmp-esoc' returned 0
+163 [140318441174784] INFO perfrun.itt <> - start itt controller for pid #26723
+163 [140318441174784] INFO perfrun.tpss <> - start tpss controller for pid #26723
+214 [140318567310080] INFO perfrun.launcher <> - Launcher: all plugins were started
+214 [140318567310080] INFO perfrun.launcher <> - DirectoryMonitor object was created
+214 [140318567310080] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+214 [140318567310080] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+214 [140318567310080] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+214 [140318567310080] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+219 [140318567310080] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+935 [140318567310080] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+938 [140318441174784] INFO perfrun.itt <> - detach itt controller
+938 [140318441174784] INFO perfrun.itt <> - detach itt controller done
+938 [140318441174784] INFO perfrun.tpss <> - stop tpss controller
+938 [140318441174784] INFO perfrun.sdk <> - De-allocating TMU: /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0/systemcollector-26718-esoc-System-Product-Name.sc
+938 [140318441174784] INFO perfrun.system <> - closed the system trace file: /home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/hs001/data.0/systemcollector-26718-esoc-System-Product-Name.sc
+938 [140318567310080] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+938 [140318567310080] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+939 [140318567310080] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+939 [140318567310080] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+939 [140318567310080] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+939 [140318567310080] INFO perfrun.launcher <> - Application exit code: 0
+939 [140318567310080] INFO perfrun.launcher <> - Exit code: 0

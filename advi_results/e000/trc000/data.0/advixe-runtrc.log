@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2024/01/15 19:48:32</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>bandwidth-measurement-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>bandwidth-measurement-done</type>
+</msg>
+<msg id="4" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="5" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="6" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/SPARSE_ANALYSIS</arg>
+  <arg>26970</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="7" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="8" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/SPARSE_ANALYSIS</arg>
+  <arg>0x55929cead000</arg>
+  <arg>0x55929d0b7277</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="9" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x7f193fdb7000</arg>
+  <arg>0x7f193ffe216f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="10" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffdfd2ea000</arg>
+  <arg>0x7ffdfd2eabc4</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="11" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/usr/lib/x86_64-linux-gnu/libstdc++.so.6</arg>
+  <arg>0x7f192ab8d000</arg>
+  <arg>0x7f192af607ff</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="12" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libgcc_s.so.1</arg>
+  <arg>0x7f192a8e7000</arg>
+  <arg>0x7f192aafe44f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="13" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <arg>0x7f192a4d4000</arg>
+  <arg>0x7f192a8c4adf</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="14" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <arg>0x7f192a136000</arg>
+  <arg>0x7f192a4d3157</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:43 2024</timestamp>
+</msg>
+<msg id="15" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/SPARSE_ANALYSIS</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="16" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="17" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="18" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/usr/lib/x86_64-linux-gnu/libstdc++.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="19" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libgcc_s.so.1</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="20" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="21" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="22" tool="trc">
+  <type>PROCESS_FINISH</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/SPARSE_ANALYSIS</arg>
+  <arg>26970</arg>
+  <arg>0x0</arg>
+  <severity>INFO</severity>
+  <timestamp>Mon Jan 15 19:48:45 2024</timestamp>
+</msg>
+<msg id="23" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="24" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/esoc/KWANG/SparseAnalysis/v3_SparseAnalysis/advi_results/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="25" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="26" tool="runtool">
+  <type>log-end</type>
+  <arg>2024/01/15 19:48:49</arg>
+</msg>
+
+</log>
+
